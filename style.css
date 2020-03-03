@@ -49,7 +49,8 @@ body {
 	content: '';
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 2;
 } */
 
 .container h1 {
@@ -126,11 +127,11 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	padding: 10px;
-	width: 400px;
-	height: 400px;
-	border: 15px solid #fff;
+	width: 380px;
+	height: 380px;
+	border: 25px solid #fff;
 	background-color: rgb(248, 148, 148);
+	z-index: 3;
 }
 
 .container footer {
