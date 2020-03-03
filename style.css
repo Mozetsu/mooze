@@ -151,46 +151,54 @@ body {
 }
 
 /* On screens that are 320px or less */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
 	.container {
 		max-width: 100vw;
 		padding: 8px;
 	}
 
 	.container h1 {
+		top: 80px;
 		width: 100%;
 		text-align: center;
 	}
 
 	.container form {
 		width: 100%;
-		justify-content: space-between;
+		justify-content: center;
 	}
+
 	.container form input[type='text'] {
-		max-width: 238px;
+		flex-grow: 1;
+		max-width: 240px;
 		padding: 0 5px;
 	}
 
 	.container form input[type='submit'] {
-		margin-left: 2px;
+		margin-left: 8px;
 		padding: 10px 10px;
 	}
 
 	.container .response {
 		padding: 0;
 		width: 100%;
-		font-size: 14px;
-		font-weight: normal;
+		max-width: 305px;
+		font-size: 16px;
 	}
 
 	.container .response .mini-url {
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 
 	.container .response i {
-		font-size: 28px;
-		margin: 0 0 0 14px;
+		font-size: 35px;
+		margin: 0 0 0 20px;
 		cursor: pointer;
+	}
+
+	.container .qrcode-container canvas {
+		width: 75%;
+		height: auto;
 	}
 
 	.container footer {

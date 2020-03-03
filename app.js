@@ -39,7 +39,7 @@ new QRious({
 	value: document.querySelector('.mini-url').childNodes[0].text,
 	element: document.getElementById('qrcode'),
 	size: 400,
-	padding: 50,
+	padding: 30,
 	level: 'l'
 });
 
