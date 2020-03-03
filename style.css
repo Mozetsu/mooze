@@ -13,6 +13,7 @@
 	--text-header: #858585;
 	--text-input: #cccccc;
 	--input-width: 32rem;
+	--shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.08);
 }
 
 a {
@@ -79,7 +80,7 @@ body {
 	color: var(--text-input);
 	border: none;
 	border-radius: 3px;
-	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--shadow);
 	outline: none;
 }
 
@@ -99,7 +100,7 @@ body {
 	color: #fff;
 	background-color: var(--primary-color);
 	cursor: pointer;
-	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--shadow);
 }
 
 .container .response {

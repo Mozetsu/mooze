@@ -12,7 +12,24 @@ function displayQRCode() {
 function copyToClipboard() {
 	const link = document.querySelector('.mini-url').childNodes[0].text;
 	navigator.clipboard.writeText(link).then(
-		() => console.log('Copied to clipboard!'),
+		() => {
+			const notification = document.createElement('div');
+			notification.className = 'notification';
+			notification.innerHTML = `<i class="fas fa-check"></i>
+      <p>Copied to Clipboard</p>
+      <i class="fas fa-times"></i>`;
+			document.querySelector('.container').appendChild(notification);
+
+			// adds notification to DOM
+			setTimeout(() => {
+				document.querySelector('.notification').style.animation = 'hideNotification 0.3s ease-in-out';
+
+				// removes notification div from DOM
+				setTimeout(() => {
+					document.querySelector('.container').removeChild(document.querySelector('.notification'));
+				}, 200);
+			}, 1000);
+		},
 		err => console.error('Could not copy text: ', err)
 	);
 }
