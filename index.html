@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://kit.fontawesome.com/649da41ace.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" type="img/png" href="./img/smile.png" />
+		<script src="https://kit.fontawesome.com/649da41ace.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 		<title>Mooze</title>
 	</head>
 	<body>
 		<div class="container">
-			<h1>Mooz<span id="e">e</span></h1>
+			<h1>Mooze</h1>
 			<form action="" method="POST">
 				<input type="text" placeholder="Enter url" spellcheck="false" />
 				<input type="submit" value="GO" />
@@ -21,8 +22,11 @@
 				<i class="fas fa-qrcode"></i>
 				<i class="fas fa-copy"></i>
 			</div>
-			<!-- <div class="qrcode"></div> -->
+			<div style="display: none;" class="qrcode-container">
+				<canvas id="qrcode" class="qrcode"></canvas>
+			</div>
 			<footer>© 2020 Mooze.xyz | Url shortener</footer>
 		</div>
+		<script src="app.js"></script>
 	</body>
 </html>

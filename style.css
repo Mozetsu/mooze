@@ -50,7 +50,9 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0;
 	z-index: 2;
+	pointer-events: none;
 } */
 
 .container h1 {
@@ -123,15 +125,21 @@ body {
 	cursor: pointer;
 }
 
-.container .qrcode {
+.container .qrcode-container {
+	padding: 1px;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 380px;
-	height: 380px;
-	border: 25px solid #fff;
-	background-color: rgb(248, 148, 148);
-	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container .qrcode-container .qrcode {
+	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .container footer {
@@ -186,4 +194,8 @@ body {
 	.container footer {
 		bottom: 10px;
 	}
+}
+
+.show {
+	display: block;
 }
