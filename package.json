@@ -1,7 +1,7 @@
 {
-	"name": "url-shortener-traversy",
+	"name": "mooze",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Url shortener",
 	"main": "server.js",
 	"dependencies": {
 		"body-parser": "^1.19.0",
@@ -9,7 +9,6 @@
 		"express": "^4.17.1",
 		"express-handlebars": "^3.1.0",
 		"mongoose": "^5.9.2",
-		"shortid": "^2.2.15",
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
@@ -20,6 +19,6 @@
 		"dev": "nodemon server.js"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Mozetsu",
 	"license": "ISC"
 }

@@ -36,7 +36,7 @@ function copyToClipboard() {
 
 // Create QRCode
 new QRious({
-	value: document.querySelector('.mini-url').childNodes[0].text,
+	value: document.querySelector('.mini-url').childNodes[0].innerText,
 	element: document.getElementById('qrcode'),
 	size: 400,
 	padding: 30,

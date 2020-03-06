@@ -1,16 +1,18 @@
-<h1>Mooze</h1>
-<form action="/" method="POST">
-  <input type="text" placeholder="Enter url" spellcheck="false" name="longUrl" />
-  <input type="submit" value="GO" />
-</form>
-{{#if url}}
-<div class="response">
-  <p>Url:</p>
-  <p class="mini-url"><a href="{{url}}">{{url}}</a></p>
-  <i class="fas fa-qrcode"></i>
-  <i class="fas fa-copy"></i>
+<div class="container-response">
+  <h1>Mooze</h1>
+  <form action="/" method="POST">
+    <input type="text" placeholder="Enter url" spellcheck="false" name="longUrl" />
+    <input type="submit" value="GO" />
+  </form>
+  {{#if url}}
+  <div class="response">
+    <p>Url:</p>
+    <p class="mini-url"><a href="{{url}}">{{displayUrl}}</a></p>
+    <i class="fas fa-qrcode"></i>
+    <i class="fas fa-copy"></i>
+  </div>
+  {{/if}}
 </div>
-{{/if}}
 <div style="display: none;" class="qrcode-container">
   <canvas id="qrcode" class="qrcode"></canvas>
 </div>

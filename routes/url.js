@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
 			let url = await Url.findOne({ longUrl });
 
 			if (url) {
-				res.render('index', { url: url.shortUrl });
+				res.render('index', { url: url.shortUrl, displayUrl: `mooze.eu/${url.urlCode}` });
 			} else {
 				const shortUrl = `${baseUrl}/${urlCode}`;
 
@@ -34,7 +34,7 @@ router.post('/', async (req, res) => {
 
 				await url.save();
 
-				res.render('index', { url: url.shortUrl });
+				res.render('index', { url: url.shortUrl, displayUrl: `mooze.eu/${urlCode}` });
 			}
 		} catch (err) {
 			console.error(err);

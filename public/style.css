@@ -44,35 +44,33 @@ body {
 	color: var(--text-input);
 }
 
-/* .container::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: '';
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.3);
-	opacity: 0;
-	z-index: 2;
-	pointer-events: none;
-} */
+.container .container-response {
+	padding: 20px 10px 0 10px;
+	position: relative;
+	width: inherit;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
 
-.container h1 {
+.container .container-response h1 {
 	width: 100%;
 	text-align: center;
-	margin-bottom: 30px;
 	color: var(--text-header);
 	font-size: 64px;
 }
 
-.container form {
+.container .container-response form {
+	margin-top: 30px;
 	width: 100%;
 	max-width: 800px;
 	display: flex;
 	justify-content: center;
 }
 
-.container form input[type='text'] {
+.container .container-response form input[type='text'] {
 	padding: 0 10px;
 	flex-grow: 1;
 	height: 50px;
@@ -85,11 +83,11 @@ body {
 	outline: none;
 }
 
-.container form input[type='text']::placeholder {
+.container .container-response form input[type='text']::placeholder {
 	color: var(--text-input);
 }
 
-.container form input[type='submit'] {
+.container .container-response form input[type='submit'] {
 	margin-left: 10px;
 	padding: 10px 20px;
 	height: 50px;
@@ -104,7 +102,10 @@ body {
 	box-shadow: var(--shadow);
 }
 
-.container .response {
+.container .container-response .response {
+	padding: 0 10px;
+	position: absolute;
+	bottom: 50px;
 	width: 100%;
 	max-width: 600px;
 	margin-top: 50px;
@@ -114,14 +115,14 @@ body {
 	font-weight: bold;
 }
 
-.container .response .mini-url {
+.container .container-response .response .mini-url {
 	color: var(--primary-color);
 	margin-left: 15px;
 	flex-grow: 1;
 	font-weight: bold;
 }
 
-.container .response i {
+.container .container-response .response i {
 	font-size: 22px;
 	margin: 0 0 0 20px;
 	cursor: pointer;
@@ -153,44 +154,49 @@ body {
 /* On screens that are 320px or less */
 @media screen and (max-width: 360px) {
 	.container {
-		max-width: 100vw;
+		width: 100vw;
 		padding: 8px;
 	}
 
-	.container h1 {
+	.container .container-response {
+		padding: 20px 5px 0 5px;
+		width: inherit;
+	}
+
+	.container .container-response h1 {
 		top: 80px;
 		width: 100%;
 		text-align: center;
 	}
 
-	.container form {
+	.container .container-response form {
 		width: 100%;
 		justify-content: center;
 	}
 
-	.container form input[type='text'] {
+	.container .container-response form input[type='text'] {
 		flex-grow: 1;
-		max-width: 240px;
+		max-width: 280px;
 		padding: 0 5px;
 	}
 
-	.container form input[type='submit'] {
+	.container .container-response form input[type='submit'] {
 		margin-left: 8px;
 		padding: 10px 10px;
 	}
 
-	.container .response {
+	.container .container-response .response {
 		padding: 0;
 		width: 100%;
-		max-width: 305px;
+		max-width: 345px;
 		font-size: 16px;
 	}
 
-	.container .response .mini-url {
+	.container .container-response .response .mini-url {
 		margin-left: 5px;
 	}
 
-	.container .response i {
+	.container .container-response .response i {
 		font-size: 35px;
 		margin: 0 0 0 20px;
 		cursor: pointer;
@@ -203,6 +209,16 @@ body {
 
 	.container footer {
 		bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container .container-response form input[type='text'] {
+		max-width: 240px;
+	}
+
+	.container .container-response .response {
+		max-width: 305px;
 	}
 }
 
