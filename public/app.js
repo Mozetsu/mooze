@@ -27,7 +27,7 @@ function copyToClipboard() {
 				// removes notification div from DOM
 				setTimeout(() => {
 					document.querySelector('.container').removeChild(document.querySelector('.notification'));
-				}, 290);
+				}, 280);
 			}, 1000);
 		},
 		err => console.error('Could not copy text: ', err)
