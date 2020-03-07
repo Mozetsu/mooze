@@ -23,12 +23,13 @@ a {
 }
 
 body {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .container {
@@ -42,6 +43,7 @@ body {
 	align-items: center;
 	font-family: 'Montserrat';
 	color: var(--text-input);
+	overflow: hidden;
 }
 
 .container .container-response {
