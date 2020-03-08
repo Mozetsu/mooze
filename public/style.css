@@ -12,7 +12,7 @@
 :root {
 	--primary-color: #ee75a8;
 	--text-header: #858585;
-	--text-input: #cccccc;
+	--text-input: #c5c5c5;
 	--input-width: 32rem;
 	--shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.08);
 }
@@ -78,7 +78,7 @@ body {
 	height: 50px;
 	font-family: 'Montserrat';
 	font-size: 20px;
-	color: var(--text-input);
+	color: var(--text-header);
 	border: none;
 	border-radius: 3px;
 	box-shadow: var(--shadow);
@@ -153,8 +153,7 @@ body {
 	font-size: 14px;
 }
 
-/* On screens that are 320px or less */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
 	.container {
 		width: 100vw;
 		padding: 8px;
@@ -172,36 +171,34 @@ body {
 	}
 
 	.container .container-response form {
-		width: 100%;
-		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.container .container-response form input[type='text'] {
-		flex-grow: 1;
-		max-width: 280px;
-		padding: 0 5px;
+		min-width: 100%;
 	}
 
 	.container .container-response form input[type='submit'] {
-		margin-left: 8px;
-		padding: 10px 10px;
+		margin: 10px 0 0 0;
+		width: 100%;
 	}
 
 	.container .container-response .response {
-		padding: 0;
+		bottom: 0;
+		padding: inherit;
 		width: 100%;
-		max-width: 345px;
-		font-size: 16px;
-	}
-
-	.container .container-response .response .mini-url {
-		margin-left: 5px;
 	}
 
 	.container .container-response .response i {
 		font-size: 35px;
 		margin: 0 0 0 20px;
 		cursor: pointer;
+	}
+
+	.container .container-response .response .mini-url {
+		margin-left: 5px;
 	}
 
 	.container .qrcode-container canvas {
@@ -211,16 +208,6 @@ body {
 
 	.container footer {
 		bottom: 10px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.container .container-response form input[type='text'] {
-		max-width: 240px;
-	}
-
-	.container .container-response .response {
-		max-width: 305px;
 	}
 }
 
