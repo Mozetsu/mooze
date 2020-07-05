@@ -1,0 +1,37 @@
+.url-container > .container {
+	padding: 0 50px;
+	height: 200px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.url-container > .container p {
+	flex-grow: 1;
+	font-size: 18px;
+}
+
+.url-container > .container button:nth-child(2) {
+	width: 26px;
+	height: 26px;
+	margin-right: 40px;
+}
+
+.url-container > .container button:nth-child(2) svg {
+	width: 26px;
+	height: 26px;
+}
+
+.url-container > .container button:nth-child(3) {
+	padding: 10px;
+	height: 30px;
+	font-weight: bold;
+	background-color: var(--secondary);
+}
+
+.url-container > .container button:nth-child(3) svg {
+	margin-left: 10px;
+	width: 14px;
+	height: 14px;
+	fill: var(--fc);
+}

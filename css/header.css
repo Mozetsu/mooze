@@ -1,0 +1,32 @@
+header {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background-color: var(--fc);
+}
+
+header > .container {
+	margin-top: 50px;
+	width: 100%;
+	max-width: var(--app-width);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 0.5rem;
+}
+
+header > .container h1 {
+	flex-grow: 1;
+}
+
+header > .container a:nth-child(2) {
+	margin-right: 20px;
+}
+
+header > .container a:nth-child(2) svg {
+	width: 26px;
+}
+
+header > .container a:nth-child(3) svg {
+	width: 24px;
+}
