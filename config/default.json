@@ -1,4 +1,0 @@
-{
-	"mongoURI": "mongodb+srv://user:1yvGDxcdJudVqkcJ@mooze-wdpcb.gcp.mongodb.net/mooze?retryWrites=true&w=majority",
-	"baseUrl": "https://mooze.eu"
-}
