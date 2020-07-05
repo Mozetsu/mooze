@@ -8,7 +8,7 @@
 
 .url-container > .container p {
 	flex-grow: 1;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .url-container > .container button:nth-child(2) {

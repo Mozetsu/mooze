@@ -6,6 +6,8 @@
 		<title>Mooze</title>
 		<link rel="icon" href="./img/logo.png" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script defer src="./js/app.js"></script>
 	</head>
 	<body class="dark">
 		<header>
@@ -32,6 +34,7 @@
 		</header>
 		<main>
 			<section class="hero spikes">
+				<div id="particles-js" class="particles"></div>
 				<div class="container">
 					<h1>SHORTEN URL'S WITH THE EASE OF A CLICK!</h1>
 					<p>Paste a link in the input box below and make it super small.</p>
@@ -78,9 +81,9 @@
 					</button>
 				</div>
 			</section>
-			<!-- <section class="features">
+			<section class="features">
 				<div class="container">
-					<p class="features-text">FEATURES</p>
+					<p class="features-text">Why Mooze?</p>
 					<div class="features">
 						<div class="feature-item">
 							<div class="feature-item-logo">
@@ -97,7 +100,7 @@
 							</div>
 							<div class="feature-item-info">
 								<p>QR CODE COMPATIBLE</p>
-								<p>Store the generated URL in your phone by scanning the QR Code.</p>
+								<p>Easily store the generated URL in your phone by scanning the QR Code.</p>
 							</div>
 						</div>
 						<div class="feature-item">
@@ -116,7 +119,7 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 		</main>
 		<footer>© <span id="year">2020</span> Mooze.eu | Url shortener</footer>
 	</body>
