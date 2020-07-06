@@ -1,19 +1,20 @@
-section:nth-child(3) {
-	margin-top: 50px;
+.features {
+	height: 100%;
+	padding-top: 50px;
 }
 
-section:nth-child(3) > .container {
+.features > .container {
 	position: relative;
 	width: 100%;
 	max-width: var(--app-width);
 }
 
-section:nth-child(3) > .container .features-text {
+.features > .container .features-text {
 	margin-bottom: 80px;
 	font-size: 16px;
 }
 
-section:nth-child(3) > .container::before {
+.features > .container::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -25,20 +26,20 @@ section:nth-child(3) > .container::before {
 	opacity: 0.4;
 }
 
-section:nth-child(3) > .container .features {
-	padding: 0 0 0 20px;
+.features > .container #features {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
-section:nth-child(3) > .container .feature-item {
+.features > .container .feature-item {
 	width: 300px;
+	margin-bottom: 50px;
 	display: inline-flex;
 	align-items: flex-start;
 }
 
-section:nth-child(3) > .container .feature-item .feature-item-logo {
+.features > .container .feature-item .feature-item-logo {
 	margin-right: 15px;
 	border-radius: 1px;
 	min-width: 40px;
@@ -49,22 +50,29 @@ section:nth-child(3) > .container .feature-item .feature-item-logo {
 	justify-content: center;
 }
 
-section:nth-child(3) > .container .feature-item .feature-item-logo svg {
+.features > .container .feature-item .feature-item-logo svg {
 	width: 20px;
 	height: 20px;
 }
 
-section:nth-child(3) > .container .feature-item .feature-item-info {
+.features > .container .feature-item .feature-item-info {
 	/* style */
 }
 
-section:nth-child(3) > .container .feature-item .feature-item-info p:nth-child(1) {
+.features > .container .feature-item .feature-item-info p:nth-child(1) {
 	margin-top: 10px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-section:nth-child(3) > .container .feature-item .feature-item-info p:nth-child(2) {
+.features > .container .feature-item .feature-item-info p:nth-child(2) {
 	margin-top: 10px;
 	font-size: 13px;
+}
+
+.url-container > .container #copy-btn svg {
+	margin-left: 10px;
+	width: 14px;
+	height: 14px;
+	fill: var(--fc);
 }

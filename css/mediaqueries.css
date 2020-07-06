@@ -1,0 +1,133 @@
+@media only screen and (min-width: 740px) {
+	.qrcode-popup .qrcode-container {
+		animation: popUpDesktop 0.2s ease-in;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	header > .container {
+		margin-top: 20px;
+	}
+
+	.hero > .container p {
+		font-size: 3.2vw;
+		margin: 10px 0;
+	}
+
+	.hero > .container .input-container {
+		margin-top: 10px;
+	}
+
+	.url-container > .container {
+		padding: 25px;
+		height: 150px;
+		transform: translate(0, 10%);
+	}
+
+	.url-container > .container #qrcode-btn {
+		margin-right: 20px;
+	}
+
+	.features > .container::before {
+		content: none;
+	}
+
+	.features > .container .features-text {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.features,
+	footer {
+		background-color: var(--fc);
+	}
+
+	.url-spikes {
+		position: relative;
+		z-index: 1;
+	}
+
+	.url-spikes::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		left: -0%;
+		top: 0;
+		z-index: -1;
+		display: block;
+		height: 25px;
+		background-size: 25px 100%;
+		background-image: linear-gradient(135deg, var(--bc) 25%, transparent 25%),
+			linear-gradient(225deg, var(--bc) 25%, transparent 25%);
+		background-position: 0 0;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.hero > .container h1 {
+		font-size: 6vw;
+		margin: 50px 0 20px 0;
+	}
+
+	.features {
+		margin-top: 10px;
+	}
+
+	.features > .container #features {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.features > .container .feature-item {
+		width: 90%;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.features > .container .feature-item:nth-child(1) {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	*/ .features > .container .feature-item {
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.hero > .container p {
+		font-size: 4vw;
+	}
+
+	.url-container > .container #url {
+		font-size: 4.5vw;
+	}
+
+	.features {
+		margin-top: 20px;
+	}
+
+	.features > .container .features-text {
+		margin-bottom: 50px;
+		font-size: 16px;
+	}
+
+	.qrcode-popup .qrcode-container {
+		padding: 25px;
+		width: 80vw;
+	}
+
+	.qrcode-popup .qrcode-container #qrcode {
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -26,6 +26,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	z-index: 1;
 }
 
 .hero > .container .input-container input {
@@ -54,6 +55,7 @@
 
 .spikes {
 	position: relative;
+	z-index: 2;
 }
 
 .spikes::after {

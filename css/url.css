@@ -1,0 +1,42 @@
+.url-container {
+	background-color: var(--bc);
+}
+
+.url-container > .container {
+	padding: 0 50px;
+	height: 200px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.url-container > .container #url {
+	flex-grow: 1;
+	font-size: 20px;
+}
+
+.url-container > .container #qrcode-btn {
+	width: 26px;
+	height: 26px;
+	margin-right: 40px;
+}
+
+.url-container > .container #qrcode-btn svg {
+	width: 26px;
+	height: 26px;
+}
+
+.url-container > .container #qrcode-btn:active {
+	transform: scale(0.92);
+}
+
+.url-container > .container #copy-btn {
+	padding: 10px;
+	height: 30px;
+	font-weight: bold;
+	background-color: var(--secondary);
+}
+
+.url-container > .container #copy-btn:active {
+	transform: scale(1.1);
+}
