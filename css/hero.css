@@ -1,3 +1,7 @@
+section:nth-child(1) {
+	background-color: var(--fc);
+}
+
 .hero > .container h1 {
 	text-align: center;
 	margin: 100px 0 30px 0;

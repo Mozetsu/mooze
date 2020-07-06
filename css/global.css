@@ -26,9 +26,9 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+
 a {
 	text-decoration: none;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,10 +50,6 @@ section {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
-}
-
-section:nth-child(1) {
-	background-color: var(--fc);
 }
 
 button {
