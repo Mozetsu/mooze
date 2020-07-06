@@ -16,6 +16,7 @@
 	padding: 50px;
 	color: var(--fc);
 	background-color: var(--primary);
+	z-index: 2;
 }
 
 .qrcode-popup .qrcode-container button svg {

@@ -1,4 +1,4 @@
-section:nth-child(1) {
+.hero {
 	background-color: var(--fc);
 }
 
@@ -16,7 +16,7 @@ section:nth-child(1) {
 
 .hero > .container .input-container {
 	position: relative;
-	transform: translate(0, 60%);
+	transform: translate(0, 50%);
 	margin-top: 50px;
 	padding: 0 10px;
 	width: 100%;
@@ -26,7 +26,6 @@ section:nth-child(1) {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	z-index: 2;
 }
 
 .hero > .container .input-container input {
@@ -55,7 +54,6 @@ section:nth-child(1) {
 
 .spikes {
 	position: relative;
-	background: #2c3e50;
 }
 
 .spikes::after {

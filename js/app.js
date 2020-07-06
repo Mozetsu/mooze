@@ -12,4 +12,4 @@ var qrcode = new QRCode(document.getElementById('qrcode'), {
 	correctLevel: QRCode.CorrectLevel.H,
 });
 
-document.querySelector('.app').style.filter = 'blur(4px)';
+document.querySelector('.app').style.filter = 'blur(3px)';
