@@ -1,5 +1,7 @@
 .hero {
+	position: relative;
 	background-color: var(--fc);
+	z-index: 2;
 }
 
 .hero > .container h1 {
@@ -16,7 +18,7 @@
 
 .hero > .container .input-container {
 	position: relative;
-	transform: translate(0, 50%);
+	transform: translate(0, 55%);
 	margin-top: 50px;
 	padding: 0 10px;
 	width: 100%;
@@ -26,7 +28,6 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	z-index: 1;
 }
 
 .hero > .container .input-container input {
@@ -53,22 +54,4 @@
 	font-weight: bold;
 }
 
-.spikes {
-	position: relative;
-	z-index: 2;
-}
 
-.spikes::after {
-	content: '';
-	position: absolute;
-	right: 0;
-	left: -0%;
-	top: 100%;
-	z-index: -1;
-	display: block;
-	height: 25px;
-	background-size: 25px 100%;
-	background-image: linear-gradient(135deg, var(--fc) 25%, transparent 25%),
-		linear-gradient(225deg, var(--fc) 25%, transparent 25%);
-	background-position: 0 0;
-}

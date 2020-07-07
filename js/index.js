@@ -20,7 +20,7 @@ async function copyToClipboard() {
 
 let leaveBtn = undefined;
 function displayQRCode() {
-	document.querySelector('.app').style.filter = 'blur(3px)';
+	document.querySelector('.app').style.filter = 'blur(5px)';
 	const bodyHTML = document.querySelector('body');
 	const popUpHTML = document.createElement('div');
 	popUpHTML.classList.add('qrcode-popup');

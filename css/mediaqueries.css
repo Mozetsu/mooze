@@ -6,26 +6,29 @@
 
 @media only screen and (max-width: 740px) {
 	.container {
-		padding: 0 15px;
+		padding: 0 20px;
 	}
 
 	header > .container {
-		margin-top: 20px;
+		margin-top: 30px;
+	}
+
+	.hero > .container h1 {
+		font-size: 4.5vw;
 	}
 
 	.hero > .container p {
-		font-size: 3.2vw;
+		font-size: 2.6vw;
 		margin: 10px 0;
 	}
 
 	.hero > .container .input-container {
-		margin-top: 10px;
+		margin-top: 30px;
 	}
 
 	.url-container > .container {
 		padding: 25px;
 		height: 150px;
-		transform: translate(0, 10%);
 	}
 
 	.url-container > .container #qrcode-btn {
@@ -42,31 +45,6 @@
 		justify-content: center;
 		align-items: center;
 	}
-
-	.features,
-	footer {
-		background-color: var(--fc);
-	}
-
-	.url-spikes {
-		position: relative;
-		z-index: 1;
-	}
-
-	.url-spikes::after {
-		content: '';
-		position: absolute;
-		right: 0;
-		left: -0%;
-		top: 0;
-		z-index: -1;
-		display: block;
-		height: 25px;
-		background-size: 25px 100%;
-		background-image: linear-gradient(135deg, var(--bc) 25%, transparent 25%),
-			linear-gradient(225deg, var(--bc) 25%, transparent 25%);
-		background-position: 0 0;
-	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -76,7 +54,7 @@
 	}
 
 	.features {
-		margin-top: 10px;
+		padding-top: 50px;
 	}
 
 	.features > .container #features {
@@ -98,18 +76,26 @@
 }
 
 @media only screen and (max-width: 600px) {
-	*/ .features > .container .feature-item {
-		margin-bottom: 30px;
+	.features > .container .feature-item {
+		margin-bottom: 50px;
 	}
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
 	.hero > .container p {
 		font-size: 4vw;
 	}
 
-	.url-container > .container #url {
-		font-size: 4.5vw;
+	.url > .container {
+		padding: 0 30px;
+	}
+
+	.url > .container #url {
+		font-size: 4vw;
+	}
+
+	.url > .container #qrcode-btn {
+		margin-right: 20px;
 	}
 
 	.features {

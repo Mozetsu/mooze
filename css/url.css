@@ -1,42 +1,70 @@
-.url-container {
-	background-color: var(--bc);
+.url {
+	background-color: var(--fc);
+	min-height: 200px;
 }
 
-.url-container > .container {
+.url > .container {
+	height: 40px;
 	padding: 0 50px;
-	height: 200px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	transform: translateY(220%);
 }
 
-.url-container > .container #url {
+.url > .container #url {
 	flex-grow: 1;
 	font-size: 20px;
 }
 
-.url-container > .container #qrcode-btn {
+.url > .container #qrcode-btn {
 	width: 26px;
 	height: 26px;
 	margin-right: 40px;
 }
 
-.url-container > .container #qrcode-btn svg {
+.url > .container #qrcode-btn svg {
 	width: 26px;
 	height: 26px;
 }
 
-.url-container > .container #qrcode-btn:active {
+.url > .container #qrcode-btn:active {
 	transform: scale(0.92);
 }
 
-.url-container > .container #copy-btn {
+.url > .container #copy-btn {
 	padding: 10px;
 	height: 30px;
 	font-weight: bold;
 	background-color: var(--secondary);
 }
 
-.url-container > .container #copy-btn:active {
+.url > .container #copy-btn svg {
+	margin-left: 10px;
+	width: 14px;
+	height: 14px;
+	fill: var(--fc);
+}
+
+.url > .container #copy-btn:active {
 	transform: scale(1.1);
+}
+
+.spikes {
+	position: relative;
+}
+
+.spikes::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: -0%;
+	top: 100%;
+	z-index: -1;
+	display: block;
+	height: 20px;
+	background-size: 20px 100%;
+	background-image: linear-gradient(135deg, var(--fc) 25%, transparent 25%),
+		linear-gradient(225deg, var(--fc) 25%, transparent 25%);
+	background-position: 0 0;
 }

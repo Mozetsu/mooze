@@ -1,13 +1,10 @@
 :root {
 	--app-width: 710px;
-
-	/* colours */
 	--grey01: #4a4849;
-	--grey02: #35363c;
+	--grey02: #3a3c42;
 	--grey03: #2a2b2f;
 	--yellow01: #f5deba;
 	--yellow02: #ffd56a;
-	/* --yellow02: #ffb877; */
 }
 
 .dark {
@@ -27,6 +24,43 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	color: var(--primary);
+	background-color: var(--bc);
+}
+
+.app {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: filter 0.1s;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 12px;
+}
+
+section {
+	position: relative;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--app-width);
+}
+
 a {
 	text-decoration: none;
 	display: flex;
@@ -38,18 +72,6 @@ svg {
 	fill: var(--primary);
 	width: 30px;
 	height: 30px;
-}
-
-.container {
-	width: 100%;
-	max-width: var(--app-width);
-}
-
-section {
-	position: relative;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
 }
 
 button {
