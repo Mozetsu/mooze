@@ -51,7 +51,7 @@
 }
 
 .server {
-	width: 100%;
+	min-width: 100%;
 	height: 40px;
 	color: var(--primary);
 	/* font-weight: bold; */
