@@ -40,7 +40,7 @@ router.post('/', async (req, res) => {
 
 		res.render('index', { url: url.shortUrl, displayUrl: `mooze.eu/${urlCode}` });
 	} catch (err) {
-		res.status(500).json('Server error');
+		res.status(500).render('index', { server: '{ 500 - Server error! 💀 }' });
 	}
 });
 

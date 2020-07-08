@@ -12,7 +12,7 @@ router.get('/:code', async (req, res) => {
 
 		res.redirect(url.longUrl);
 	} catch (err) {
-		res.status(500).json('Server error');
+		res.status(500).render('index', { server: '{ 500 - Server error! 💀 }' });
 	}
 });
 
