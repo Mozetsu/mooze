@@ -23,7 +23,7 @@ app.use('/', require('./routes/index'));
 app.use('/', require('./routes/url'));
 
 app.get('/', async (req, res) => {
-	res.render('index');
+	res.render('index', { server: '{ Your Url will be placed here 👽 }' });
 });
 
 app.listen(PORT, () => console.log(`// ${PORT}...`));

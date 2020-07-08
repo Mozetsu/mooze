@@ -10,11 +10,11 @@ router.post('/', async (req, res) => {
 	const baseUrl = process.env.BASE_URL;
 
 	if (!validUrl.isUri(baseUrl)) {
-		return res.status(401).render('index', { error: 'Invalid base Url' });
+		return res.status(401).render('index', { server: 'Invalid base Url' });
 	}
 
 	if (!validUrl.isUri(longUrl)) {
-		return res.status(401).render('index', { error: '{ Something is wrong with that Url 😐 }' });
+		return res.status(401).render('index', { server: '{ Something is wrong with that Url 😐 }' });
 	}
 
 	const urlCode = ministring(5);

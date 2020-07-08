@@ -5,7 +5,11 @@ const Url = require('../models/Url');
 router.get('/:code', async (req, res) => {
 	try {
 		const url = await Url.findOne({ urlCode: req.params.code });
-		if (!url) res.status(404).send({ 404: 'Url not found!' });
+
+		if (!url) {
+			return res.status(404).render('index', { server: '{ 404 - Url not found! 🚀 }' });
+		}
+
 		res.redirect(url.longUrl);
 	} catch (err) {
 		res.status(500).json('Server error');
