@@ -1,0 +1,114 @@
+<div class="app">
+  <header>
+    <div class="container">
+      <h1>MOOZE</h1>
+      <a href="https://twitter.com/Mozetsu" title="Follow me on Twitter" target="_blank" rel="noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <polyline points="0 0 24 0 24 24 0 24" opacity="0" />
+          <path
+            d="M8.08 20A11.07 11.07 0 0 0 19.52 9 8.09 8.09 0 0 0 21 6.16a.44.44 0 0 0-.62-.51 1.88 1.88 0 0 1-2.16-.38 3.89 3.89 0 0 0-5.58-.17A4.13 4.13 0 0 0 11.49 9C8.14 9.2 5.84 7.61 4 5.43a.43.43 0 0 0-.75.24 9.68 9.68 0 0 0 4.6 10.05A6.73 6.73 0 0 1 3.38 18a.45.45 0 0 0-.14.84A11 11 0 0 0 8.08 20" />
+        </svg>
+      </a>
+      <a href="https://github.com/Mozetsu" title="See my projects on GitHub" target="_blank" rel="noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0" />
+          <path
+            d="M12 1A10.89 10.89 0 0 0 1 11.77 10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11 2.37 2.37 0 0 0 3.2.89 2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91 3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.68 10.68 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77 10.89 10.89 0 0 0 12 1"
+            data-name="github" />
+        </svg>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div id="particles-js" class="particles"></div>
+      <div class="container">
+        <h1 class="hero-title">SHORTEN URL'S WITH THE EASE OF A CLICK!</h1>
+        <p class="hero-description">Online free url generator that allows you to create short links</p>
+        <form method="POST" action="/" class="input-container">
+          <input id="url-input" type="text" name="longUrl" placeholder="Enter url..." spellcheck="false" />
+          <input type="submit" value="GO">
+        </form>
+      </div>
+    </section>
+    <section class="url spikes">
+      <div class="container">
+        {{#if url}}
+        <p id="url">{{displayUrl}}</p>
+        <button id="qrcode-btn">
+          <svg width="700" height="700" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H300V300H0V0ZM100 100H200V200H100V100Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M400 0H700V300H400V0ZM500 100H600V200H500V100Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M300 400H0V700H300V400ZM200 500H100V600H200V500Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M400 400H700V700H400V400ZM500 500H600V600H500V500Z" />
+          </svg>
+        </button>
+        <button id="copy-btn">
+          COPY<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460 460"
+            style="enable-background: new 0 0 460 460;" xml:space="preserve">
+            <path d="M425.934,0H171.662c-18.122,0-32.864,14.743-32.864,32.864v77.134c6.985,0,144.07,0,149.543,0
+                      c34.664,0,62.865,28.201,62.865,62.865c0,6.489,0,145.491,0,147.139h74.728c18.121,0,32.864-14.743,32.864-32.865V32.864
+                      C458.797,14.743,444.055,0,425.934,0z" />
+            <path
+              d="M288.339,139.998H34.068c-18.121,0-32.865,14.743-32.865,32.865v254.272C1.204,445.257,15.946,460,34.068,460h254.272
+                      c18.122,0,32.865-14.743,32.865-32.864V172.863C321.206,154.741,306.461,139.998,288.339,139.998z" />
+          </svg>
+        </button>
+        {{/if}}
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <p class="features-text">Why Mooze?</p>
+        <div id="features">
+          <div class="feature-item">
+            <div class="feature-item-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <rect width="24" height="24" opacity="0" />
+                <path
+                  d="M19.4 7.34L16.66 4.6A2 2 0 0 0 14 4.53l-9 9a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71zM16 10.68L13.32 8l1.95-2L18 8.73z" />
+              </svg>
+            </div>
+            <div class="feature-item-info">
+              <p>SIMPLE DESIGN</p>
+              <p>Minimal and friendly user interface. Less is More.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="clock">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0" />
+                    <path
+                      d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4 11h-4a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2z" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="feature-item-info">
+              <p>24 HOUR LINKS</p>
+              <p>Each link lasts 24 hours giving you enough time to use it.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item-logo">
+              <svg width="700" height="700" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H300V300H0V0ZM100 100H200V200H100V100Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M400 0H700V300H400V0ZM500 100H600V200H500V100Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M300 400H0V700H300V400ZM200 500H100V600H200V500Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M400 400H700V700H400V400ZM500 500H600V600H500V500Z" />
+              </svg>
+            </div>
+            <div class="feature-item-info">
+              <p>QR CODE COMPATIBLE</p>
+              <p>Easily store the generated URL in your phone by scanning the QR Code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Mooze.eu | Url shortener</footer>
+</div>

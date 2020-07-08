@@ -1,0 +1,32 @@
+{
+	"name": "mooze",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mozetsu/mooze.git"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-handlebars": "^3.1.0",
+		"ministring": "^1.0.22",
+		"mongoose": "^5.9.2",
+		"valid-url": "^1.0.9"
+	},
+	"devDependencies": {
+		"dotenv": "^8.2.0",
+		"nodemon": "^2.0.2"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Mozetsu/mooze/issues"
+	},
+	"homepage": "https://github.com/Mozetsu/mooze#readme"
+}

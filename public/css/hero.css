@@ -20,7 +20,7 @@
 	position: relative;
 	transform: translate(0, 55%);
 	margin-top: 50px;
-	padding: 0 10px;
+	padding-left: 10px;
 	width: 100%;
 	background-color: var(--primary);
 	height: 45px;
@@ -30,8 +30,8 @@
 	align-items: center;
 }
 
-.hero > .container .input-container input {
-	padding-right: 10px;
+.hero > .container .input-container input[type='text'] {
+	margin-right: 10px;
 	flex-grow: 1;
 	border: none;
 	background-color: transparent;
@@ -49,11 +49,13 @@
 	align-items: center;
 }
 
-.hero > .container .input-container button {
+.hero > .container .input-container input[type='submit'] {
+	width: 50px;
+	height: 100%;
 	font-size: 16px;
 	font-weight: bold;
 }
 
-.hero > .container .input-container button:active {
+.hero > .container .input-container input[type='submit']:active {
 	transform: scale(0.92);
 }

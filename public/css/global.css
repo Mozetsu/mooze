@@ -75,7 +75,8 @@ svg {
 	height: 30px;
 }
 
-button {
+button,
+input[type='submit'] {
 	outline: none;
 	border: none;
 	background-color: transparent;
