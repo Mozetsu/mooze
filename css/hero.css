@@ -1,7 +1,7 @@
 .hero {
 	position: relative;
 	background-color: var(--fc);
-	z-index: 2;
+	z-index: 1;
 }
 
 .hero > .container h1 {
@@ -54,4 +54,6 @@
 	font-weight: bold;
 }
 
-
+.hero > .container .input-container button:active {
+	transform: scale(0.92);
+}

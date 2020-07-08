@@ -16,7 +16,7 @@
 	padding: 50px;
 	color: var(--fc);
 	background-color: var(--primary);
-	z-index: 2;
+	z-index: 3;
 	animation: popUp 0.2s ease-in;
 }
 

@@ -47,7 +47,7 @@
 }
 
 .url > .container #copy-btn:active {
-	transform: scale(1.1);
+	transform: scale(0.92);
 }
 
 .spikes {
