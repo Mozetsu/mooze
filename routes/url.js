@@ -9,8 +9,13 @@ router.post('/', async (req, res) => {
 	const { longUrl } = req.body;
 	const baseUrl = process.env.BASE_URL;
 
-	if (!validUrl.isUri(baseUrl)) return res.status(401).json('Invalid base url');
-	if (!validUrl.isUri(longUrl)) res.status(401).json('Invalid long url');
+	if (!validUrl.isUri(baseUrl)) {
+		return res.status(401).render('index', { error: 'Invalid base Url' });
+	}
+
+	if (!validUrl.isUri(longUrl)) {
+		return res.status(401).render('index', { error: '{ Something is wrong with that Url 😐 }' });
+	}
 
 	const urlCode = ministring(5);
 
