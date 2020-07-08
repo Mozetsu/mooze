@@ -85,7 +85,3 @@ input[type='submit'] {
 	align-items: center;
 	cursor: pointer;
 }
-
-.isPopulated {
-	min-height: 200px;
-}
