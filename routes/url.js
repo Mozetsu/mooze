@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
 	const baseUrl = process.env.BASE_URL;
 
 	if (!validUrl.isUri(baseUrl)) {
-		return res.status(401).render('index', { server: 'Invalid base Url' });
+		return res.status(401).render('index', { server: '{ Invalid base Url ✋ }' });
 	}
 
 	if (!validUrl.isUri(longUrl)) {
