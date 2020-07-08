@@ -1,6 +1,10 @@
 .url {
 	background-color: var(--fc);
-	min-height: 200px;
+	min-height: 100px;
+}
+
+.url + .url .container:empty {
+	min-height: 100px;
 }
 
 .url > .container {
